@@ -184,11 +184,7 @@ contract CryptoBoys is ERC721 {
     // get that token from all crypto boys mapping and create a memory of it defined as (struct => CryptoBoy)
     CryptoBoy memory cryptoboy = allCryptoBoys[_tokenId];
     // if token's forSale is false make it true and vice versa
-    if(cryptoboy.forSale) {
-      cryptoboy.forSale = false;
-    } else {
-      cryptoboy.forSale = true;
-    }
+    cryptoboy.forSale != cryptoboy.forSale;
     // set and update that token in the mapping
     allCryptoBoys[_tokenId] = cryptoboy;
   }
